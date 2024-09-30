@@ -1,0 +1,13 @@
+
+ 1053  vi myfirstbashscript.sh
+ 1054  chmod +x myfirstbashscript.sh
+ 1055  export USER=Konstantin
+ 1056  vi myfirstbashscript.sh
+
+  1 #!/bin/bash
+  2 date
+  3 echo Hello,$USER !
+  4 pwd myfirstbashscript.sh
+  5 ps -ef | tail +2 | wc -l
+  6 ps -ef | grep '[b]ioset' | wc -l
+  7 ls -l myfirstbashscript.sh | awk '{print$1}'
